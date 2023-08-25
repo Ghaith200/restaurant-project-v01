@@ -5,7 +5,7 @@
     <title>ticrou-restaurant</title>
     <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
   </head>
   <body>
   
@@ -50,7 +50,9 @@
         </div>
         <div class="rightnav">
           <i class="fa fa-search"></i>
-          <img class="icons" src="./images/shopping-bag-svgrepo-com.svg" alt="Shopping Bag Icon">
+          <i class="fa fa-shopping-bag"></i>
+
+
         </div>
         
       </div>
@@ -265,15 +267,193 @@
       </div>
     </section>
     <section class="testomonial">
+        <div class="test-images">
+          <div class="chilly">
+            <img  src="./images/image-2.png" alt="chilly">
+          </div>
+        </div>
+        <div class="test">
+          <div class="test-title">
+            <span>testomonials</span>
+            <h2>What Clients Say <br>About <span>Ticrou</span></h2>
+          </div>
+          <div class="inner-test">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolore voluptate ut aut enim nostrum ratione perferendis nisi ipsum officia cupiditate accusamus, itaque natus. Totam corrupti distinctio magnam similique tenetur.</p>
+            <div class="author-box">
+              <div >
+                <img class="test-img" src="./images/testimonial-1.jpg" alt="testomonial" >
+              </div>
+              <div class="author-text">
+                <h4>Sandra Bullock</h4>
+                <p>Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="discount">
+      <div class="disc-title">
+        <span >Get 25% Discount</span>
+        <h2>Explore Special Taste &amp; The <br>Best Quality</h2>
+        <a href="http://azim.commonsupport.com/Ticrou/index.html" class="theme-btn-one">Make a Reservation</a>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news-title">
+        <span>Ticrou News</span>
+        <h2>Know More About The <br>Ticrou Article</h2>
+      </div>
+      <div class="news-content">
+            <div class="news1">
+              <div class="img-box">
+                <!-- <img src="./images/news-1.jpg" alt="" > -->
+              </div>
+              <div class="lower-content">
+                <a href="">Right Way to Make Cold Coffee</a>
+                <ul class="post-info clearfix">
+                  <li><i class="icon-10"></i><a href="http://azim.commonsupport.com/Ticrou/blog-details.html">Admin</a></li>
+                  <li><i class="icon-11"></i><a href="http://azim.commonsupport.com/Ticrou/blog-details.html">1 Comment</a></li>
+              </ul>
+                <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
+                <a href="http://azim.commonsupport.com/Ticrou/blog-details.html" class="theme-btn-two">Read More</a>
+              </div>
+            </div>
+              <div class="news2">
+                <div class="img-box">
+                  <img src="./images/news-2.jpg" alt="">
+              </div>
+              <div class="lower-content">
 
-      <div>
-        <img class="chilly" src="./images/image-2.png" alt="" srcset="">
+              </div>
+            </div>
+            <div class="news3">
+                <div>
+                <img src="./images/news-3.jpg " alt="">
+              </div>
+              </div>
+            </div>
       </div>
-      <div class="testom-img">
-        <img src="./images/testimonial-1.jpg" alt="testomonial" >
-      </div>
-      <div class="man">
-        <img src="./images/men-1.png" alt="" srcset="">
+    </section>
+    <section class="booking">
+    <div class="sub-title">
+      <span class="sub-title">Table Booking</span>
+      <h2>Pre-Order to Make a <br>Reservation</h2>
+    </div>
+    <div class="form-container">
+      <h2>Reservation Form</h2>
+      <form>
+          <div class="input-group">
+              <div class="input-item">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" name="full-name" required>
+              </div>
+              <div class="input-item">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+          </div>
+
+          <div class="input-group">
+              <div class="input-item">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="input-item">
+                  <label for="occasion">Occasion</label>
+                  <select id="occasion" name="occasion">
+                      <option value="birthday">Birthday</option>
+                      <option value="anniversary">Anniversary</option>
+                      <option value="wedding">Wedding</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="input-group">
+              <div class="input-item">
+                  <label for="preferred-food">Preferred Food</label>
+                  <input type="text" id="preferred-food" name="preferred-food">
+              </div>
+              <div class="input-item">
+                  <label for="num-persons">Number of Persons</label>
+                  <input type="number" id="num-persons" name="num-persons" min="1" value="1">
+              </div>
+          </div>
+
+          <div class="input-group">
+              <div class="input-item">
+                  <label for="booking-time">Booking Time</label>
+                  <input type="time" id="booking-time" name="booking-time">
+              </div>
+              <div class="input-item">
+                  <label for="booking-date">Booking Date</label>
+                  <input type="date" id="booking-date" name="booking-date">
+              </div>
+          </div>
+
+          <div class="input-group">
+              <div class="input-item full-width">
+                  <label for="special-request">Special Request</label>
+                  <textarea id="special-request" name="special-request" rows="4"></textarea>
+              </div>
+          </div>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+    </div>
+    </section>
+    <section class="footeer">
+      <div class="upper-footer">
+        <div class="content">
+          <div class="open">
+                  <div class="widget-title">
+                      <h3>Opening Times</h3>
+                  </div>
+                  <div class="widget-content">
+                      <ul>
+                          <li>Monday – Thursday: 08AM – 10PM</li>
+                          <li>Friday – Saturday: 10AM–11:30PM</li>
+                          <li>Sunday: <span>Closed</span></li>
+                          <li>Booking TIme: 24/7 Hours</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="logo">
+                  <div class="widget-content">
+                      <div class="foot-logo">
+                        <img src="./images/footer-logo.png" alt="" srcset="">
+                      </div>
+                      <div class="text">
+                          <p>Tincidunt neque pretium lectus donec risus. Mauris mi tempor nunc orc leo consequat vitae erat gravida lobortis nec et sagittis.</p>
+                      </div>
+                        <div class="social">
+                          <div class="social-icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                          </div>
+                        </div>
+                  </div>
+          </div>
+          <div class="contact">
+            <!--  -->
+                  <div class="widget-title">
+                      <h3>Contact Info</h3>
+                  </div>
+                  <div class="widget-content">
+                      <ul class="info-list">
+                          <li><span>Address: </span>New Hyde Park, NY 11040</li>
+                          <li><span>Email: </span><a href="mailto:example@info.com">example@info.com</a></li>
+                          <li><span>Call: </span><a href="tel:912136660027">(+91) 213 666 0027</a></li>
+                      </ul>
+                  </div>
+            <!--  -->
+          </div>
+        </div>
+      <div class="lower-footer">
+        <p>Copyright 2022 by <a href="index.html">ticrou</a> All Right Reserved.</p>
       </div>
     </section>
   </body>
