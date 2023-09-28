@@ -1,0 +1,148 @@
+
+@media screen and (width <= 1200px) {
+    .social{
+        display: none;
+    }
+}
+
+/* tablet view */
+@media screen and (width<=1090px){
+    .book-btn-container{
+        display: none;
+    }
+    
+    .header-top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        gap: 10px;
+        padding:15px 0px;
+    }
+    .header-bottom{
+        width:100%;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    .nav{
+        display: block;
+        font-size: 40px;
+        color: var(--darkblue);
+        cursor: pointer;
+    }
+    
+    .banner-text{
+        width: 95%;
+    }
+    .banner-text h3{
+    font-family: 'Rouge Script', cursive;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    min-height: 70px;
+    }
+
+    .banner-text h2{
+    font-size: 60px;
+    line-height: 90px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 29px;
+    }
+
+    .banner-text p{
+        font-size: 17px;
+        line-height: 30px;
+        font-family: 'DM Sans', sans-serif;
+        color: #fff;
+        margin-top: 40px;
+    }
+    
+    .menu{
+        height: auto;
+    }
+    
+    .main-menu {
+        align-items: center;
+        margin: auto;
+        width: auto;
+        
+        }
+    .menu-1{
+        margin: 20px 20px 0px 20px;
+        width:fit-content;
+    }
+    
+    .shop-section{
+        padding-top: 780px;
+        padding-bottom: 40px;
+    }
+}
+
+/* mobile view */
+@media screen and (width <=445px){
+    .header-top .info{
+    font-size: 15px;
+    
+    }
+
+    .header-top .hours{
+        font-size: 14px;
+    }
+
+    .navbar{
+        display: none;
+    }
+    
+    .rightnav ,.toogler .search-icon{
+        display: none;
+    }
+    
+    .banner-text{
+        width: 100%;
+    }
+    .banner-text h3{
+        font-size: 30px;
+    }
+
+    .banner-text h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .banner-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .header-bottom{
+        justify-content: space-between;
+    }
+    .about-text h3{
+        font-size: 35px;
+    }
+    
+    .about-text h2{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .menu-title .sub-title{
+        
+    }
+    
+    .menu-title h2{
+        align-items: center;
+        font-size: 40px;
+    }
+}
+@media screen and(width <=850px ) {
+    .out-cont{
+        height: fit-content;
+    }
+
+}
