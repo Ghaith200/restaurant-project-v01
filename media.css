@@ -73,8 +73,8 @@
         
         }
     .menu-1{
-        margin: 20px 20px 0px 20px;
-        width:fit-content;
+        display: flex;
+        flex-direction: column;
     }
     
     .shop-section{
