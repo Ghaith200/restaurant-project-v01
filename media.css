@@ -1,10 +1,4 @@
 
-@media screen and (width <= 1200px) {
-    .social{
-        display: none;
-    }
-}
-
 /* tablet view */
 @media screen and (width<=1090px){
     .book-btn-container{
