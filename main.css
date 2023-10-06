@@ -311,7 +311,7 @@ body {
     border: none;
 }
 
-.banner-img .banner-sep {
+.banner-img .banner-sep{
     position: absolute;
     bottom: -5px;
     left: 0px;
@@ -365,6 +365,10 @@ body {
     font-size: 1.2rem;
 }
 
+.banner-text .make-reservation .make-reservation-btn{
+    margin: auto;
+}
+
 .make-reservation-btn {
     position: relative;
     border-radius: 28px;
@@ -378,7 +382,7 @@ body {
     font-size: 17px;
     padding: 16px 31px;
     text-decoration: none;
-    display: inline-block;
+    display:block;
     padding: 20px 38px 20px 37px;
     margin-top: 25px;
     overflow: hidden;
@@ -776,7 +780,7 @@ p {
     line-height: 64px;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
-    color: #000;
+    color: var(--black);
     margin: 0px;
     text-align: left;
 }
@@ -799,7 +803,14 @@ p {
     position: relative;
 }
 
-.add-btn {
+.cart-btn{
+    position: absolute;
+    margin: 10px;
+    left:70px;
+    top: 14rem;
+}
+
+.add-btn{
     position: relative;
     border-radius: 28px;
     background-color: var(--gold);
@@ -874,19 +885,6 @@ p {
     transition: all 500ms ease;
     color: var(--gold);
     font-family: "Libre Baskerville", serif;
-}
-
-.previous {
-    margin: auto;
-    background-color: var(--white);
-    color: var(--black);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.fa-arrow-left-long {
-    text-align: center;
 }
 
 .promotion {
@@ -1042,15 +1040,25 @@ a:hover {
     background-repeat: no-repeat;
     width: 100%;
     background-color: var(--baige);
-    display: inline-flex;
+    display: flex;
     height: fit-content;
     position: relative;
+    justify-content: space-between;
+}
+
+.author-box{
+    width: fit-content;
+}
+
+.author-text{
+    margin: auto;
 }
 
 .chilly {
+    width: 150px;
     position: absolute;
-    right: 0px;
-    top: 118px;
+    left: 1340px;
+    top: 0px;
 }
 
 .test-images {
@@ -1067,7 +1075,6 @@ a:hover {
 }
 
 .test {
-
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -1109,7 +1116,9 @@ a:hover {
 
 .author-box {
     margin-top: 45px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .author-box h4 {
@@ -1206,6 +1215,7 @@ a:hover {
 
 .lower-content a:hover{
     color: var(--gold);
+    
 }
 .lower-content .theme-btn-two {
     align-items: start;
@@ -1230,16 +1240,6 @@ a:hover {
 
 .fa-regular{
     color: var(--gold);
-}
-
-.order-section .form-inner {
-    position: relative;
-    display: block;
-    max-width: 850px;
-    background: #fff;
-    margin: 0 auto;
-    box-shadow: 0px 70px 40px rgba(0, 0, 0, 0.05);
-    padding: 50px 70px 100px 70px;
 }
 
 .booking {
@@ -1286,7 +1286,6 @@ a:hover {
 }
 
 .logo {
-    max-width: 50%;
     position: relative;
     width: 45%;
     padding-right: 15px;
@@ -1342,6 +1341,7 @@ ul {
 }
 
 .footer {
+    position: relative;
     background-color: var(--darkblue);
     width: 100%;
     display: flex;
@@ -1370,47 +1370,7 @@ ul {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
-}
-
-.form-inner {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form input,
-.form select,
-.form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form select {
-    appearance: none;
-    -webkit-appearance: none;
-    padding-right: 30px;
-    background: url("path-to-your-arrow-icon.png") no-repeat right center;
-}
-
-.form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.form button {
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.form button:hover {
-    background-color: #ff8800;
+    font-family: Poppins, sans-serif;
 }
 
 body {
@@ -1427,6 +1387,10 @@ body {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group{
+    border: none;
 }
 
 h2 {
@@ -1468,9 +1432,10 @@ select,
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #f8f8f8;
+    background-color: var(--white);
 }
 
 button[type="submit"] {
@@ -1488,10 +1453,13 @@ button[type="submit"] {
     text-decoration: none;
     display: inline-block;
     margin: auto;
+    transition: all ease-in-out 300ms;
 }
 
 button[type="submit"]:hover {
     background-color: var(--black);
+    color: var(--white);
+    z-index:2;
 }
 
 .img-box img {
@@ -1514,4 +1482,26 @@ button[type="submit"]:hover {
 
 .news1 .img-box a img:hover {
     background: #000;
+}
+
+.widget-content .text p{
+    color: var(--white);
+}
+form .make-reservation-btn{
+    margin: auto;
+}
+
+.contact span{
+    color:var(--gold);
+}
+
+.footer-sep img{
+    width:100%;
+}
+
+.footer-sep{
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    z-index: 9999999999;
 }

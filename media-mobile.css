@@ -1,0 +1,101 @@
+/* mobile view */
+@media screen and (width <=445px){
+    .header-top{
+        margin: auto;
+    }
+    .header-top .info{
+    font-size: 20px;
+    
+    }
+    .header-top .hours{
+        font-size: 15px;
+    }
+
+    .navbar{
+        display: none;
+    }
+    
+    .rightnav ,.toogler .search-icon{
+        display: none;
+    }
+    
+    .banner-text{
+        width: 100%;
+    }
+    .banner-text h3{
+        font-size: 50px;
+    }
+
+    .banner-text h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .banner-text p{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    /* ??????????????????????? */
+    .banner-img .banner-sep{
+        display: none;
+    }
+    /* ??????????????????????? */
+    .menu-1::before{
+        top: -20px;
+        left: -1px;
+    }
+
+    .shop-section{
+        padding-top: 2050px;
+    }
+
+    .header-bottom{
+        justify-content: space-between;
+    }
+    .about-text h3{
+        font-size: 35px;
+    }
+    
+    .about-text h2{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    
+    .menu-title h2{
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .test{
+        height: 810px;
+    }
+
+    .testomonial{
+        width: 100%;
+        overflow: hidden;
+    }
+    .promotion{
+        padding-bottom: 10px;
+    }
+    .form-container .input-group{
+
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 100%;
+        padding-top:10px ;
+        padding-bottom:10px ;
+    }
+    .widget-content .text{
+        width: 100%;
+        font-size: 20px;
+    }
+    .sub-title h2 {
+        font-size: 40px;
+    }
+    .tomatoes{
+        display: none;
+    }
+}
