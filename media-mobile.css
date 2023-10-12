@@ -1,5 +1,10 @@
 /* mobile view */
 @media screen and (width <=445px){
+
+    .container{
+        width: 95%;
+    }
+
     .header-top{
         margin: auto;
     }

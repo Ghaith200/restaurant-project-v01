@@ -664,10 +664,10 @@ p {
     background: url("./images/shape-4.png");
     background-size: contain;
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: absolute;
     background-repeat: no-repeat;
-    bottom: -50px;
+    bottom: -59px;
     left: 0px;
 }
 
@@ -752,7 +752,6 @@ p {
     z-index: 1;
     position: relative;
     padding: 482px 0px 120px 0px;
-    overflow: hidden;
     background: linear-gradient(rgba(197, 196, 196, 0.727),
             rgba(248, 248, 248, 0.854)),
         url("./images/shop-bg.jpg");
@@ -786,9 +785,8 @@ p {
 }
 
 .plates {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -803,11 +801,30 @@ p {
     position: relative;
 }
 
-.cart-btn{
+.overlay{
     position: absolute;
-    margin: 10px;
-    left:70px;
-    top: 14rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.5);
+    color: #f1f1f1;
+    transition: .3s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.add-btn{
+    position: absolute;
+    top: 205px;
+}
+
+.overlay:hover{
+    opacity: 1;
+    z-index: 9999;
 }
 
 .add-btn{
@@ -825,6 +842,30 @@ p {
     padding: 5px 18px;
     margin: auto;
     width: fit-content;
+}
+
+.add-btn:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--white);
+    z-index:2;
+}
+
+.add-btn::before{
+    width: 0;
+    content: '';
+    transition: all 500ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius:28px
+}
+
+.add-btn:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    z-index:-1;
 }
 
 .shop-block-one .inner-box {
@@ -889,7 +930,7 @@ p {
 
 .promotion {
     position: relative;
-    text-align: center;
+    padding: 111px 20px 120px 20px;
 }
 
 .sub-title {
@@ -929,7 +970,7 @@ p {
     margin: 0px;
 }
 
-.lower-content {
+.plate-1 .lower-content ,.plate-2 .lower-content , .plate-3 .lower-content ,.plate-4 .lower-content{
     text-align: center;
 }
 
@@ -979,7 +1020,7 @@ hr {
 
 .order-box-1 {
     box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.07);
-    padding: 111px 20px 120px 20px;
+    padding: 111px 20px 0px 20px;
     width: 50%;
 }
 
@@ -998,6 +1039,10 @@ hr {
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     margin-bottom: 16px;
+}
+.order-box-1 .make-reservation{
+    width: fit-content;
+    margin: auto;
 }
 
 .theme-btn-one {
@@ -1031,19 +1076,19 @@ a:hover {
     outline: none;
 }
 
-.promotion {
-    padding: 111px 20px 120px 20px;
-}
-
 .testomonial{
-    background-image: url("./images/men-1.png");
-    background-repeat: no-repeat;
     width: 100%;
     background-color: var(--baige);
     display: flex;
     height: fit-content;
     position: relative;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.testomonial .container{
+    background-image: url("./images/men-1.png");
+    background-repeat: no-repeat;
 }
 
 .author-box{
@@ -1057,14 +1102,18 @@ a:hover {
 .chilly {
     width: 150px;
     position: absolute;
-    left: 1340px;
+    right: -150px;
     top: 0px;
 }
 
-.test-images {
+.tomatoes{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 650px;
+    left: -151px;
+}
+
+.test-images {
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1110,8 +1159,15 @@ a:hover {
     color: var(--gold);
 }
 
+.test-1{
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
 .test-img {
     border-radius: 50px;
+    margin: auto;
 }
 
 .author-box {
@@ -1125,6 +1181,10 @@ a:hover {
     margin: 0;
 }
 
+.fa-star{
+    color: var(--gold);
+}
+
 .discount {
     background-color: var(--darkblue);
     width: 100%;
@@ -1133,14 +1193,14 @@ a:hover {
 }
 
 .disc-title {
-    margin-top: 90px;
+    margin-top:80px;
     position: relative;
     display: block;
     font-size: 50px;
     line-height: 70px;
     font-family: "Rouge Script", cursive;
     font-weight: 400;
-    margin-bottom: 17px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -1154,10 +1214,8 @@ a:hover {
     font-family: 'Libre Baskerville', serif;
     font-size: 50px;
 }
-
-.disc-btn:hover {
-    background-color: var(--black);
-    background-color: black;
+.disc-title .make-reservation{
+    display: inline-block;
 }
 
 .post-info{
@@ -1167,13 +1225,13 @@ a:hover {
 }
 
 .post-info li a{
-    font-size: 15px;
+    font-size: 16px;
     color: var(--gray);
-    margin-left: 3px;
+    margin-left: 9px;
 }
 .post-info i {
-    font-size: 15px;
-    margin-left: 5px;
+    font-size: 17px;
+    margin-left: 3px;
 }
 
 .news-title {
@@ -1185,6 +1243,7 @@ a:hover {
     font-family: "Rouge Script", cursive;
     font-weight: 400;
     margin-bottom: 17px;
+    margin-top: 20px;
 }
 
 .news-title h2 {
@@ -1200,9 +1259,9 @@ a:hover {
 
 .lower-content{
     position: relative;
-    display: block;
     padding: 27px 30px 37px 30px;
     text-align: start;
+    
 }
 
 .lower-content a{
@@ -1229,7 +1288,7 @@ a:hover {
     border: 1px solid #e5e5e5;
     border-radius: 25px;
     transition: all 500ms ease;
-    padding: 13px 33px 12px 34px;
+    padding: 5px 25px 5px 25px;
 }
 
 .lower-content .theme-btn-two:hover {
@@ -1238,12 +1297,24 @@ a:hover {
     border-color: #c59d5f;
 }
 
+.lower-content .theme-btn-two {
+    margin-top: 50px;
+}
+
 .fa-regular{
     color: var(--gold);
 }
 
 .booking {
     background-color: var(--baige);
+}
+
+.booking .container{
+    padding-top: 30px;
+}
+
+.container .sub-title{
+    margin-top: 50px;
 }
 
 .form {
@@ -1381,12 +1452,14 @@ body {
 }
 
 .form-container {
+    position: relative;
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .input-group{
@@ -1434,6 +1507,7 @@ textarea {
     padding: 8px;
     border: none;
     border-bottom: 1px solid #ccc;
+    color: var(--gold);
     border-radius: 3px;
     background-color: var(--white);
 }
@@ -1462,6 +1536,9 @@ button[type="submit"]:hover {
     z-index:2;
 }
 
+.news{
+    margin-bottom: 60px;
+}
 .img-box img {
     justify-content: center;
     width: 100%;
@@ -1472,7 +1549,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    overflow: hidden;
+    gap: 25px;
 }
 
 .news1 {
@@ -1489,6 +1566,13 @@ button[type="submit"]:hover {
 }
 form .make-reservation-btn{
     margin: auto;
+}
+
+.form-img-1{
+    position: absolute;
+    bottom: 621px;
+    right: -274px;
+    
 }
 
 .contact span{
