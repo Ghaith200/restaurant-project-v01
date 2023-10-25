@@ -1311,6 +1311,7 @@ a:hover {
 
 .booking .container{
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .container .sub-title{
@@ -1512,6 +1513,25 @@ textarea {
     background-color: var(--white);
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="time"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: var(--gold);
+    border-radius: 3px;
+    background-color: var(--white);
+    
+}
+
+
 button[type="submit"] {
     border-radius: 28px;
     width: fit-content;
@@ -1588,4 +1608,15 @@ form .make-reservation-btn{
     top: -25px;
     left: -50px;
     z-index: 9999999999;
+}
+
+.form-img-2{
+    position: absolute;
+    top: -345px;
+    left: -145px;
+}
+
+.form-img-2 img{
+    height: 200px;
+    
 }
